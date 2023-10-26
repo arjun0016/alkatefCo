@@ -1,0 +1,36 @@
+.company-content{
+    margin-top: 100px;
+    margin-left: 5%;
+
+}
+.company-content h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: orangered;
+}
+.company-logo .a{
+    width:300px;
+    height: 300px;
+}
+.d{
+    width:350px;
+    height: 350px;
+}
+.c{
+    width:200px;
+    height: 200px;
+}
+.company-logo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+@media screen and (max-width:786px) {
+    .company-content{
+        margin-top: 50px;
+        margin-left: 5%;
+    
+    }
+}
