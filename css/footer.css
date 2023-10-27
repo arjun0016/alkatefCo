@@ -35,7 +35,7 @@
 }
 @media screen and (max-width:991px) {
     .footer{
-        height: 700px;
+        height: 490px;
     }
     .footer-content p{
         font-size: 15px;

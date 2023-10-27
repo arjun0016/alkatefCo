@@ -1,12 +1,17 @@
 const images = ["./image/char.png", "./image/char2.png","./image/char3.png"];
 const paragraphs = [
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsam veniam sunt voluptates quidem esse similique voluptas, iste optio aliquam labore laboriosam officia in consequatur?",
-    "Lorem ipsum dolor sit amet,  adipisicing elit. Minima ipsam veniam sunt voluptates quidem esse similique voluptas, iste optio aliquam labore laboriosam officia in consequatur",
-    "Lorem ipsum dolor sit amet, consectetur adipisicing . Minima ipsam veniam sunt voluptates quidem esse similique voluptas, iste optio aliquam labore laboriosam officia in consequatur"
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsam veniam sunt voluptates quidem esse similique ",
+    "Lorem ipsum dolor sit amet,  adipisicing elit. Minima ipsam veniam sunt voluptates quidem esse similique voluptas,",
+    "Lorem ipsum dolor sit amet, consectetur adipisicing . Minima ipsam veniam sunt voluptates quidem esse similique voluptas,"
 ];
+const name = [
+    "olivia Scott","Matthew Brown","jhon Smith"
+]
 
 const imgElement = document.querySelector(".png");
 const paragraphElement = document.querySelector(".color-div p");
+const nameElement = document.querySelector(".name");
+
 const nextButton = document.getElementById("nextButton");
 
 let currentIndex = 0;
@@ -15,6 +20,7 @@ let slideInterval;
 function showSlide() {
     imgElement.src = images[currentIndex];
     paragraphElement.textContent = paragraphs[currentIndex];
+    nameElement.textContent = name[currentIndex];
 }
 
 function nextSlide() {

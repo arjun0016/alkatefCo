@@ -48,7 +48,9 @@
 .b{
     margin-left: 100px;
 }
-
+.br{
+    display: none;
+}
 @media screen and (max-width:991px) {
 
     .about-content .para{
@@ -76,7 +78,11 @@
     .b{
         margin-left: 0px;
     }
+    .br{
+        display: none;
+    }
 }
+
 @media screen and (max-width:770px){
     .about-content{
         position: absolute;
@@ -91,9 +97,21 @@
     
     .about-content .para{
         margin-top: 30px;
-        font-size: 45px;
+        font-size: 40px;
         line-height: 55px;
         width: 95%;
     }
-
+   
+}
+@media screen and (max-width:310px) {
+    .br{
+        display:block;
+    }
+    .about{
+     
+        height: 1555px;
+    }
+    .about-img{
+        height: 1555px;    
+    }
 }
