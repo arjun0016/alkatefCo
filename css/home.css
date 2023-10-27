@@ -12,7 +12,7 @@ filter: brightness(50%);
     position: absolute;
     top: 55%;
     left: 5%;
-    color:#ff7650;
+    color:rgb(104,219,162);
 }
 .home-content h1{
     font-size: 80px;
