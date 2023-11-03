@@ -61,6 +61,9 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.7s;
   }
+  .bimg{
+    display: none;
+  }
   
   .card-slide-front {
     transform: translateY(0%);
@@ -173,7 +176,8 @@
     opacity: 0;
     transform: translateY(0%);
     transition: opacity 0.5s;
-    
+    /* padding-inline-start:50px ; */
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,45 +218,12 @@
   .card-container:hover .card-slide-back {
     opacity: 1;
   }
-  .card-slide-front img {
+  
+  .fimg{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-  }
-  .card-slide-front1 img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  .card-slide-front2 img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  .card-slide-front3 img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  .card-slide-front4 img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  .card-slide-front5 img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  .card-slide-front6 img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  .card-slide-front7 img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+
   }
 
   #mydiv.expanded {
@@ -313,6 +284,10 @@
     display: none;
 }
 
+.expanded .bimg{
+  display:block;
+}
+
 @media screen and (max-width:700px){
     .all-team{
        display: flex;
@@ -322,16 +297,16 @@
     }
 
     .custom-border-top-right-radius {
-        border-top-right-radius: 10%;
+        border-top-right-radius: 0%;
     }
     .custom-border-top-left-radius {
-        border-top-left-radius: 10%;
+        border-top-left-radius: 0%;
     }
     .custom-border-bottom-right-radius {
-        border-bottom-right-radius: 10%;
+        border-bottom-right-radius: 0%;
     }
     .custom-border-bottom-left-radius {
-        border-bottom-left-radius: 10%;
+        border-bottom-left-radius: 0%;
     }
 
     #mydiv.expanded {
@@ -349,7 +324,6 @@
         transition: all 0.3s ease; /* Add smooth transition for animation */
         position: relative;
         overflow-y: hidden;    
-        
     }
     
     /* Styles for the expanded state */
@@ -366,15 +340,16 @@
         overflow-y: hidden;
     }
     .card-slide-back {
-   
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
       }
-
-      
-
+}
+@media screen and (max-width:500px){
+  .all-team{
+    display: none;
+  }
 }
 
 
