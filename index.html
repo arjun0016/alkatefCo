@@ -329,35 +329,35 @@
 
 
     <script>
-        const divElements = document.querySelectorAll('.card-container.person');
+      const divElements = document.querySelectorAll('.card-container.person');
 
 divElements.forEach((divElement) => {
-    divElement.addEventListener('click', () => {
-        // Toggle the "expanded" class on the clicked card-container
-        divElement.classList.toggle('expanded');
+  divElement.addEventListener('click', () => {
+      // Toggle the "expanded" class on the clicked card-container
+      divElement.classList.toggle('expanded');
 
-        // Check if the card-container is expanded
-        if (divElement.classList.contains('expanded')) {
-            // Set dimensions and position for the expanded state
-            const allTeamDiv = document.querySelector('.all-team');
-            const rect = allTeamDiv.getBoundingClientRect();
-            const expandedWidth = rect.width;
-            const expandedHeight = rect.height;
+      // Check if the card-container is expanded
+      if (divElement.classList.contains('expanded')) {
+          // Set dimensions and position for the expanded state
+          const allTeamDiv = document.querySelector('.all-team');
+          const rect = allTeamDiv.getBoundingClientRect();
+          // const expandedWidth = rect.width;
+          // const expandedHeight = rect.height;
 
-            divElement.style.width = expandedWidth + 'px';
-            divElement.style.height = expandedHeight + 'px';
-            divElement.style.left = '0';
-            divElement.style.top = '0';
-        } else {
-            // Reset dimensions and position when collapsed
-            divElement.style.width = '200px';
-            divElement.style.height = '200px';
-            divElement.style.left = 'auto';
-            divElement.style.top = 'auto';
-        }
-    });
+          // divElement.style.width = expandedWidth + 'px';
+          // divElement.style.height = expandedHeight + 'px';
+          divElement.style.left = '0';
+          divElement.style.top = '0';
+      } else {
+          // Reset dimensions and position when collapsed
+          // divElement.style.width = '200px';
+          // divElement.style.height = '200px';
+          divElement.style.left = 'auto';
+          divElement.style.top = 'auto';
+      }
+  });
 });
-    </script>
+    </script>
 
 
     <script src="./js/slide.js" ></script>
