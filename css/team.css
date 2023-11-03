@@ -1,106 +1,379 @@
-.team{
-
-}
-.team-content h3{
-    margin-left: 5%;
-    font-weight: 700;
-    color: rgb(104,219,162);
-
-}
-
-.gray-div{
-    position: relative;
-    width: 95%;
-    background-color:rgb(221,221,221);
-    height: 700px;
-    margin-left: auto;
-}
-.color-div{
-    position: absolute;
-    width: 55%;
-    background-color: rgb(104,219,162);
-    height: 500px;
-    left:-5%;
-    top: 28.5%;
+.all-persons{
+    width:100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    /* align-items: start; */
-}
-.color-div p{
- width: 80%;
- font-size: 35px;
- color: azure;
- margin-left: 5%;
+    align-items: center;
 
 }
-/* .color-div im{
-    animation-duration: 3s;        
-    animation-name: slide-img;
+.all-team{
+    position: relative;
+    width: 800px;
+    border-radius: 10%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    place-items: center;
 }
-@keyframe slide-img{
-    from{
-        margin-left:100%;
-    }
-    to{
-        margin-left:0%
-    }
-} */
-.color-div h5{
-    font-weight: 700;
-    color: azure;
-    margin-left: 5%;
+.person{
+    width: 200px;
+    height: 200px;
+}
+.custom-border-top-right-radius {
+    border-top-right-radius: 10%;
+}
+.custom-border-top-left-radius {
+    border-top-left-radius: 10%;
+}
+.custom-border-bottom-right-radius {
+    border-bottom-right-radius: 10%;
+}
+.custom-border-bottom-left-radius {
+    border-bottom-left-radius: 10%;
+}
+
+.card-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  #mydiv{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+
+.card-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .card-slide-front,
+  .card-slide-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #06AAF5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.7s;
+  }
+  
+  .card-slide-front {
+    transform: translateY(0%);
+  }
+  
+  .card-slide-front1,
+  .card-slide-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #85AAA9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.7s;
+  }
+  
+  .card-slide-front1 {
+    transform: translateY(0%);
+  }
+  .card-slide-front2,
+  .card-slide-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FAA338;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.7s;
+  }
+  
+  .card-slide-front2 {
+    transform: translateY(0%);
+  }  .card-slide-front3,
+  .card-slide-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFCD8C;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.7s;
+  }
+  
+  .card-slide-front3 {
+    transform: translateY(0%);
+  }  .card-slide-front4,
+  .card-slide-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FF766C;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.7s;
+  }
+  
+  .card-slide-front4 {
+    transform: translateY(0%);
+  }  .card-slide-front5,
+  .card-slide-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #35BAC4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.7s;
+  }
+  
+  .card-slide-front5 {
+    transform: translateY(0%);
+  }  .card-slide-front6,
+  .card-slide-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #446699;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.7s;
+  }
+  
+  .card-slide-front6 {
+    transform: translateY(0%);
+  }  .card-slide-front7,
+  .card-slide-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.7s;
+    background-color:#3F66CC;
+  }
+  
+  .card-slide-front7 {
+    transform: translateY(0%);
+  }
+  
+  .card-slide-back {
+    background: linear-gradient(#646fc6, #fff);
+    color: #000;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: opacity 0.5s;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-container:hover .card-slide-front {
+    transform: translateY(-100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .card-container:hover .card-slide-front1 {
+    transform: translateY(-100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .card-container:hover .card-slide-front2 {
+    transform: translateY(-100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .card-container:hover .card-slide-front3 {
+    transform: translateY(-100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .card-container:hover .card-slide-front4 {
+    transform: translateY(-100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .card-container:hover .card-slide-front5 {
+    transform: translateY(-100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .card-container:hover .card-slide-front6 {
+    transform: translateY(-100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .card-container:hover .card-slide-front7 {
+    transform: translateY(-100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .card-container:hover .card-slide-back {
+    opacity: 1;
+  }
+  .card-slide-front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .card-slide-front1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .card-slide-front2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .card-slide-front3 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .card-slide-front4 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .card-slide-front5 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .card-slide-front6 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .card-slide-front7 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  #mydiv.expanded {
+    width: 600px;
+    height: 600px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    overflow-y: hidden;
+}
+
+.card-container.person {
+    /* Add your initial styles here */
+    transition: all 0.3s ease; /* Add smooth transition for animation */
+    position: relative;
+    overflow-y: hidden;
+
+    
+}
+
+/* Styles for the expanded state */
+.card-container.person.expanded {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: contain;
     z-index: 1;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow-y: hidden;
 }
-.png{
-    position: absolute;
-    left: 120%;
-    top: -18%;
-    height: 112%;
-    width: 34%;
-}
-.next{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-@media screen and (max-width:991px){
-    .color-div p{
-        font-size: 25px;
-       }
-       .png{
-        height: 120%;
-        width: 60%;
-    }
-}
-@media screen and (max-width:700px){
-    .png{
-        position: absolute;
-        left: 30%;
-        top: 41%;
-        height: 60%;
-        width: 35%;
-    }
-    .color-div{
-        position: absolute;
-        width: 100%;
-        height: 450px;
-        left:-5%;
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        top:10.5%;
-    }
-    .gray-div{
-        width: 95%;
-        height: 505px;
-    }
-    .color-div p{
-        z-index: 1;
-        line-height: 30px;
-        margin-top: -50%;
 
-       }
+.card-container.person.expanded .card-slide-front {
+    display: none;
+}
+.card-container.person.expanded .card-slide-front1 {
+    display: none;
+}
+.card-container.person.expanded .card-slide-front2 {
+    display: none;
+}
+.card-container.person.expanded .card-slide-front3 {
+    display: none;
+}
+.card-container.person.expanded .card-slide-front4 {
+    display: none;
+}
+.card-container.person.expanded .card-slide-front5 {
+    display: none;
+}
+.card-container.person.expanded .card-slide-front6 {
+    display: none;
+}
+.card-container.person.expanded .card-slide-front7 {
+    display: none;
+}
+
+@media screen and (max-width:700px){
+    .all-team{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .custom-border-top-right-radius {
+        border-top-right-radius: 10%;
+    }
+    .custom-border-top-left-radius {
+        border-top-left-radius: 10%;
+    }
+    .custom-border-bottom-right-radius {
+        border-bottom-right-radius: 10%;
+    }
+    .custom-border-bottom-left-radius {
+        border-bottom-left-radius: 10%;
+    }
+
+    #mydiv.expanded {
+        width: 300px;
+        height:100px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 100;
+        overflow-y: hidden;
+    }
+    
+    .card-container.person {
+        /* Add your initial styles here */
+        transition: all 0.3s ease; /* Add smooth transition for animation */
+        position: relative;
+        overflow-y: hidden;    
+        
+    }
+    
+    /* Styles for the expanded state */
+    .card-container.person.expanded {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: contain;
+        z-index: 1;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        overflow-y: hidden;
+    }
+    .card-slide-back {
+   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      
 
 }
 

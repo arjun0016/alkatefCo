@@ -45,3 +45,21 @@ startAutoSlide(); // Start automatic slideshow
 nextButton.addEventListener("click", () => {
     stopAutoSlide();
 });
+
+
+
+
+
+
+
+
+//expand
+const expandableDiv = document.getElementById('myDiv');
+
+expandableDiv.addEventListener('click', () => {
+    if (expandableDiv.class.contains('expanded')) {
+        expandableDiv.class.remove('expanded');
+    } else {
+        expandableDiv.class.add('expanded');
+    }
+});
