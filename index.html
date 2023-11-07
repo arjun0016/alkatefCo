@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="./css/team.css">
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/contact.css">
+  
     <script src="https://kit.fontawesome.com/28b12dbe21.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="font-family:Outfit variablefont wght, sans-serif;">
 
     <nav class="navbar">
         <div class="navbar-container container">
@@ -96,29 +97,16 @@
 
     </section>
 
-    <!-- <section class="team">
-
-        <div class="team-content">
-            <h3>Team</h3>
-        </div>
-
-        <div class="slide">
-            <div class="gray-div">
-                <div class="color-div">
-                <img class="png" src="./image/char.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ipsam veniam sunt voluptates quidem esse similique voluptas,</p>
-                <h5 class="name">olivia Scott</h5>
-                </div>
-        <button id="nextButton" class="next btn btn-dark">Next</button>
-
-            </div>
-        </div>
-    
-    
-
-    </section> -->
 
     <section class="teams">
+
+         
+
+      <div class="team-content">
+        <h3>Team</h3>
+    </div>
+
+
     <div class="all-persons mb-5 ">
         <div class="all-team ">
         
@@ -293,6 +281,75 @@
 
     </section>
 
+    <section class="contact">
+
+  
+
+    <div class="row">
+      <div class="contact-content">
+        <h3>Contact Us</h3>
+      </div>
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+          <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()" method="POST" role="form">
+
+              <div class="form-group">
+                  <label class="form-label" id="nameLabel" for="name"></label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1">
+              </div>
+
+              <div class="form-group">
+                  <label class="form-label" id="emailLabel" for="email"></label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2">
+              </div>
+
+              <div class="form-group">
+                  <label class="form-label" id="subjectLabel" for="sublect"></label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
+              </div>
+
+              <div class="form-group">
+                  <label class="form-label" id="messageLabel" for="message"></label>
+                  <textarea rows="3" cols="60" name="message" class="form-control" id="message" placeholder="Your message" tabindex="4"></textarea>                                 
+              </div>
+
+              <div class="text-center margin-top-25">
+                  <button type="submit" class="btn btn-mod btn-border btn-large">Send Message</button>
+              </div>
+
+          </form><!-- End form -->
+        
+      </div><!-- End col -->
+
+  </div><!-- End row -->
+
+  
+  <div class="contact-details">
+    <div>
+      <h1>Location &  Inquiries </h1>
+      <p>We're here for you</p>
+    </div>
+    <div>
+      <h1>Office</h1>
+      <p>M- 03 Plot : 283, Shabiya
+        10, Mussaffah, Abu dhabi , UAE</p>
+  
+      <p>7th Floor MPS Tower,
+        Arayidathupalam Calicut , Kerala India</p>
+    </div>
+  </div>
+
+
+
+
+
+  
+
+
+
+    </section>
+
     <section  class="footer">
 
         <div class="footer-all" >
@@ -333,31 +390,22 @@
 
 divElements.forEach((divElement) => {
   divElement.addEventListener('click', () => {
-      // Toggle the "expanded" class on the clicked card-container
       divElement.classList.toggle('expanded');
 
-      // Check if the card-container is expanded
       if (divElement.classList.contains('expanded')) {
-          // Set dimensions and position for the expanded state
           const allTeamDiv = document.querySelector('.all-team');
           const rect = allTeamDiv.getBoundingClientRect();
-          // const expandedWidth = rect.width;
-          // const expandedHeight = rect.height;
 
-          // divElement.style.width = expandedWidth + 'px';
-          // divElement.style.height = expandedHeight + 'px';
           divElement.style.left = '0';
           divElement.style.top = '0';
       } else {
-          // Reset dimensions and position when collapsed
-          // divElement.style.width = '200px';
-          // divElement.style.height = '200px';
+ 
           divElement.style.left = 'auto';
           divElement.style.top = 'auto';
       }
   });
 });
-    </script>
+</script>
 
 
     <script src="./js/slide.js" ></script>

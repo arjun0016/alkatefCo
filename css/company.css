@@ -1,6 +1,6 @@
 .company-content{
-    margin-top: 100px;
-    margin-left: 5%;
+    margin-block-start: 100px;
+    margin-inline-start: 5%;
 
 }
 .company-content h3{
