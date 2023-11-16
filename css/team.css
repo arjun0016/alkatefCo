@@ -1,4 +1,4 @@
-.team-content h3{
+/* .team-content h3{
   margin-inline-start:5% ;
   font-size: 25px;
   font-weight: 700;
@@ -183,7 +183,6 @@
     opacity: 0;
     transform: translateY(0%);
     transition: opacity 0.5s;
-    /* padding-inline-start:50px ; */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -244,15 +243,13 @@
 }
 
 .card-container.person {
-    /* Add your initial styles here */
-    transition: all 0.3s ease; /* Add smooth transition for animation */
+    transition: all 0.3s ease;
     position: relative;
     overflow-y: hidden;
 
     
 }
 
-/* Styles for the expanded state */
 .card-container.person.expanded {
     width: 100%;
     height: 100%;
@@ -313,13 +310,11 @@
     }
     
     .card-container.person {
-        /* Add your initial styles here */
-        transition: all 0.3s ease; /* Add smooth transition for animation */
+        transition: all 0.3s ease;
         position: relative;
         overflow-y: hidden;    
     }
     
-    /* Styles for the expanded state */
     .card-container.person.expanded {
         width: 100%;
         height: 100%;
@@ -344,4 +339,132 @@
     display: none;
   }
 }
+ */
 
+
+
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap');
+
+ .team-heading h3{
+  margin-inline-start: 5%;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(104,219,162);
+  margin-block-end:50px;
+ }
+
+body {
+	font-family: 'Poppins', sans-serif;
+
+}
+
+
+ul,
+li {
+	list-style: none;
+}
+
+.contain {
+
+	display: flex;
+  flex-wrap:wrap ;
+  justify-content:center;
+  align-items: center;
+	gap: 50px;
+}
+
+.cards {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.intro {
+	position: absolute;
+	height: 0;
+	width: 350px;
+	bottom: 0;
+	overflow: hidden;
+	padding: 0px;
+	color: #000000;
+	background-color: rgb(255, 255, 255);
+	transition: .5s ease-in-out;
+}
+
+.cards:hover .intro {
+	height: 150px;
+	bottom: 0;
+	background-color: #ffffff;
+}
+
+.cards:hover .text-p {
+	opacity: 1;
+	visibility: visible;
+}
+
+.cards:hover img {
+	transform: scale(1.03) 
+}
+
+.contain img {
+	height: 350px;
+	width: 300px;
+	object-fit: cover;
+	border-radius:0px!important;
+	transition: transform .5s ease-in-out;
+}
+
+.text-h1 {
+	margin: 10px;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+.text-p {
+	font-size: 16px;
+	padding: 10px;
+	visibility: hidden;
+	opacity: 0;
+}
+.down{
+  margin-block-start: 100px;
+}
+
+@media screen and (max-width:991px) {
+  .down{
+    margin-block-start: 0px;
+  }
+  .contain {
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+  .contain img{
+    height: 700px;
+	width: 500px;
+  }
+  .intro{
+	width: 500px;
+
+  }
+}
+@media screen and (max-width:786px) {
+
+  .contain img{
+    height: 450px;
+	width: 300px;
+  }
+  .intro{
+	width: 300px;
+
+  }
+  
+}
