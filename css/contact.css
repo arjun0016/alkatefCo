@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-block-start: 50px;
 }
 
 .contact-content h3{
@@ -99,13 +100,26 @@
       background: #000;
       outline: none;
   }
-  @media only screen and (max-width: 800px) {
+  .contact-details p {
+    margin-bottom: 5px!important;
+  }
+  @media only screen and (max-width: 991px) {
     .contact{
         height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        align-items: start;
+    }
+    .contact-details{
+      margin-inline-start: 5%;
+      margin-block-start: 50px;
+    }
+  
+    form{
+      margin-inline-start: 5%;
+      height:auto;
+      width:90vw;
     }
   }
   
