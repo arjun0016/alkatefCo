@@ -29,6 +29,10 @@
   .margin-top-25 {
     margin-top: 25px;
   }
+  .row_{
+    --bs-gutter-x: 0rem!important;
+  }
+
   
   .form-title {
     padding: 25px;
@@ -102,6 +106,8 @@
   }
   .contact-details p {
     margin-bottom: 5px!important;
+    font-size: 16px;
+    color: black;
   }
   @media only screen and (max-width: 991px) {
     .contact{

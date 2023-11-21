@@ -1,0 +1,178 @@
+.team-img{
+    position: relative;
+    object-fit: cover;
+    top: -80px;
+    width: 100%;
+    height: 80vh;
+    filter: brightness(50%);
+}
+.team-content {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width:80%;
+
+
+}
+.team-content h1 , p {
+    color: white;
+    font-size: 50px;
+
+}
+.teams p {
+    color: rgb(34, 34, 34);
+
+
+}
+.team-heading p {
+    font-size: 25px;
+    font-weight: 600;
+    width: 47%;
+    margin-inline-start: 10%;
+    margin-block-end: 5%;
+
+}
+
+@media screen and (max-width:786px) {
+
+    
+
+    .team-content h1 ,{
+        font-size: 40px;
+    
+    }
+    .team-content p {
+      font-size: 18px;
+    }
+    .team-heading p {
+      font-size: 25px;
+      font-weight: 600;
+      width: 85%;
+      margin-inline-start: 10%;
+      margin-block-end: 5%;
+  
+  }
+}
+
+
+/* //////////////////////////////// */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap');
+
+.team-heading h3{
+ margin-inline-start: 5%;
+ font-size: 25px;
+ font-weight: 700;
+ color: rgb(104,219,162);
+ margin-block-end:30px;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+
+}
+
+
+ul,
+li {
+   list-style: none;
+}
+
+.contain {
+
+   display: flex;
+ /* flex-wrap:wrap ; */
+ justify-content:center;
+ align-items: center;
+   gap: 70px;
+}
+
+.cards {
+   position: relative;
+   height: 450px;
+   overflow: hidden;
+   cursor: pointer;
+   margin-block-end: 70px;
+}
+
+.intro {
+   position: absolute;
+   height: 50px;
+   width: 450px;
+   bottom: 0;
+   overflow: hidden;
+   padding: 0px;
+   color: #000000;
+   background-color: rgb(255, 255, 255);
+   transition: .5s ease-in-out;
+}
+
+.cards:hover .intro {
+   height: 150px;
+   bottom: 0;
+   background-color: #ffffff;
+}
+
+.cards:hover .text-p {
+   opacity: 1;
+   visibility: visible;
+}
+
+.cards:hover img {
+   transform: scale(1.03) 
+}
+
+.contain img {
+   height: 450px;
+   width: 400px;
+   object-fit: cover;
+   border-radius:0px!important;
+   transition: transform .5s ease-in-out;
+}
+
+.text-h1 {
+   margin: 10px;
+   text-transform: uppercase;
+   font-size: 28px;
+}
+
+.text-p {
+   font-size: 16px;
+   padding: 10px;
+   visibility: hidden;
+   opacity: 0;
+}
+
+.form-label{
+   margin-bottom: 3rem!important;
+}
+
+@media screen and (max-width:991px) {
+ .down{
+   margin-block-start: 0px;
+ }
+ .contain {
+
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+   margin-inline-start: auto;
+   margin-inline-end: auto;
+ }
+ .cards {
+   height: auto;
+   width: 80%;
+   margin-block-end: 30px;
+
+ }
+ .contain img{
+   height: auto;
+   width: 100%;
+ }
+ .intro{
+   width:100%;
+ 
+   }
+}

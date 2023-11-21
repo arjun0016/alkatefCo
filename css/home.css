@@ -4,14 +4,14 @@
     object-fit: cover;
     top: -80px;
     width: 100%;
-    height: 900px;
-filter: brightness(50%);
+    height: 100vh;
+    filter: brightness(50%);
 
 }
 .home-content{
     position: absolute;
     top: 55%;
-    left: 5%;
+    left:10%;
     color:rgb(104,219,162);
 }
 .home-content h1{
@@ -52,12 +52,14 @@ filter: brightness(50%);
   
     }
     .home-content p{
-        font-size: 19px;
+        font-size: 18px;
     }
     .home-img{
 
         height: 750px;
-
-    
+    }
+    .home-content h1{
+        font-size: 40px;
+        font-weight: 700;
     }
 }

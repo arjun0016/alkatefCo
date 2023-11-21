@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;700&display=swap');
+
+body{
+    font-family: 'Outfit', sans-serif;
+}
 *,
 *::after,
 *::before{
@@ -10,8 +15,8 @@
     font-size: 62.5%;
 }
 .logo{
-    height: 140px;
-    width: 240px;
+    height: 120px;
+    width: 220px;
 }
 
 .navbar input[type="checkbox"],
@@ -21,7 +26,7 @@
 
 .container{
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -39,17 +44,20 @@
     justify-content: space-between;
     height: 64px;
     align-items: center;
+
 }
 
 .menu-items{
     order: 2;
     display: flex;
+    margin-inline-end: 80px!important;
+    
 }
 
 
 .menu-items li{
     list-style: none;
-    margin-left: 1.5rem;
+    margin-inline-start: 3.5rem;
     font-size: 1.3rem;
 }
 
@@ -63,9 +71,7 @@
 .navbar a:hover{
     color: #117964;
 }
-.line{
-    color: white;
-}
+
 
 @media (max-width: 991px){
     .navbar{
@@ -161,6 +167,7 @@
 
     .logo{
         position: absolute;
+        top: -20px;
         right: 15px;
         font-size: 2.5rem;
     }
