@@ -11,11 +11,11 @@
 .home-content{
     position: absolute;
     top: 55%;
-    left:10%;
+    left:8%;
     color:rgb(104,219,162);
 }
 .home-content h1{
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 700;
 }
 .home-content p{
