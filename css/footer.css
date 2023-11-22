@@ -12,7 +12,7 @@
 .footer-content{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     margin-top: 100px;
 }
 
@@ -36,6 +36,10 @@
 .copyrights p {
     font-size: 14px;
 }
+.copyrights a{
+    color: inherit;
+
+}
 @media screen and (max-width:991px) {
     .footer{
         height: 490px;
@@ -50,7 +54,7 @@
         display: flex;
         flex-direction: column;
         justify-content:center;
-        align-items: center;
+        align-items: left;
     
     }
     .footer{
@@ -62,5 +66,5 @@
     .copyrights{
         margin-top: 30px;
     }
-    
+
 }
