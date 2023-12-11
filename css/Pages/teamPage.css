@@ -32,7 +32,7 @@
 .team-heading p {
     font-size: 25px;
     font-weight: 600;
-    width: 47%;
+    width: 70%;
     margin-inline-start: 10%;
     margin-block-end: 5%;
 
@@ -64,10 +64,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap');
 
 .team-heading h3{
- margin-inline-start: 5%;
  font-size: 25px;
  font-weight: 700;
- color: rgb(104,219,162);
+ color:#db3e00;
  margin-block-end:30px;
 }
 

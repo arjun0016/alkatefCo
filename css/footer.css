@@ -54,7 +54,8 @@
         display: flex;
         flex-direction: column;
         justify-content:center;
-        align-items: left;
+        width: 50%;
+        margin-inline-start: 5%;
     
     }
     .footer{
