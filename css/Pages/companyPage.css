@@ -1,6 +1,11 @@
 /* .company-body{
     background: linear-gradient(to right, #ffffff, #9fee9fd2, #ffffff,#ffffff, #ffffff);
 } */
+.company-section a{
+    color: inherit;
+    text-decoration: none;
+
+}
 
 .company-img{
     position: relative;
@@ -103,9 +108,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
-        background-color: rgba(201, 226, 201, 0.363);
-     
+        gap: 20px;   
         border-radius:70px;
         margin-block: 50px;
         padding: 50px;
