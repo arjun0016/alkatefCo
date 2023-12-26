@@ -8,22 +8,16 @@
     font-weight: 700;
     color:#db3e00;
 }
-.company-logo .a{
+ .a , .d{
     width:300px;
     height: 300px;
 }
-.d{
-    width:300px;
-    height: 300px;
-}
-.c{
+
+.c, .e{
     width:200px;
     height: 200px;
 }
-.e{
-    width:200px;
-    height: 200px;
-}
+
 .company-logo{
     width: 100%;
     display: flex;

@@ -104,14 +104,14 @@
     
     .about-content .para{
         margin-top: 30px;
-        font-size: 30px;
+        font-size: 26px;
         line-height: 55px;
         width: 95%;
     }
     .subs{
-        margin-top: 100px;
+        margin-top: 70px;
         display: flex;
-        gap: 30px;
+        gap: 25px;
         /* flex-direction: column; */
         
     }
@@ -122,21 +122,20 @@
     .subs h1{
         font-weight: 700;
         font-size: 30px;
-        color: rgb(223, 221, 221);
         
     }
    
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:500px) {
     .br{
         display:block;
     }
     .about{
      
-        height: 950px;
+        height: 850px;
     }
     .about-img{
-        height: 950px;    
+        height: 850px;    
     }
         
     .about-content .para{
